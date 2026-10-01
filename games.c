@@ -1758,17 +1758,7 @@ void case4_game2_run(void)
         printf("                  1");
         Sleep(700);
         system("cls");
-        if(wordType == 0)
-        {
-            printf("\n\n");
-            printf("                 %s\n", positive[wordNumber]);
-        }
-        else
-        {
-            printf("\n\n");
-            printf("                 %s\n", negative[wordNumber]);
-        }
-        if(colour == 1)
+         if(colour == 1)
         {
             system("color 0C");
         }
@@ -1783,6 +1773,20 @@ void case4_game2_run(void)
         else
         {
             system("color 0E");
+        }
+        if(wordType == 0)
+        {
+            printf("\n\n");
+            printf("                 %s\n", positive[wordNumber]);
+            Sleep(500);
+            system("cls");
+        }
+        else
+        {
+            printf("\n\n");
+            printf("                 %s\n", negative[wordNumber]);
+            Sleep(500);
+            system("cls");
         }
         startTime = clock();
         answer = getch();
